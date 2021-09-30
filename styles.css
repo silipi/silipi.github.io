@@ -1,0 +1,23 @@
+#loader {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+#loader::before {
+  content: "";
+  width: 80px;
+  height: 80px;
+  border-top: 2px solid rgb(50, 150, 240);
+  border-right: 2px solid transparent;
+  border-radius: 50%;
+  animation: spin 0.7s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
